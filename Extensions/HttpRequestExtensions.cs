@@ -4,7 +4,7 @@
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNetCore.Http;
 
-namespace CN.STOCK.DynamicOData.Extensions
+namespace DynamicOData.Core.Extensions
 {
     public static class HttpRequestExtensions
     {

@@ -27,7 +27,7 @@ using System.Text;
 using ODataPath = Microsoft.AspNet.OData.Routing.ODataPath;
 using ServiceLifetime = Microsoft.OData.ServiceLifetime;
 
-namespace CN.STOCK.DynamicOData.DataSource.SqlServer
+namespace DynamicOData.Core.DataSource.SqlServer
 {
     public static class Extensions
     {

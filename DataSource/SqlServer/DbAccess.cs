@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Threading;
 
-namespace CN.STOCK.DynamicOData.DataSource.SqlServer
+namespace DynamicOData.Core.DataSource.SqlServer
 {
     class DbAccess : IDisposable
     {

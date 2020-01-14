@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OData.UriParser;
 
-namespace CN.STOCK.DynamicOData.Extensions
+namespace DynamicOData.Core.Extensions
 {
     public class MatchAllRoutingConvention : IODataRoutingConvention
     {

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Text;
 
-namespace CN.STOCK.DynamicOData.DataSource.SqlServer
+namespace DynamicOData.Core.DataSource.SqlServer
 {
     public class Utility
     {

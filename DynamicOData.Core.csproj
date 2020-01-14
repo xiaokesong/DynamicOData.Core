@@ -1,8 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <AssemblyName>CN.STOCK.DynamicOData</AssemblyName>
+    <AssemblyName>DynamicOData.Core</AssemblyName>
+    <Description>用于支持表和视图的动态OData</Description>
+    <PackageProjectUrl>https://github.com/xiaokesong/DynamicOData.Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/xiaokesong/DynamicOData.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

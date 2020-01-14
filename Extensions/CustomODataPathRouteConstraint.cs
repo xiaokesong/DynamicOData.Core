@@ -1,12 +1,12 @@
 ﻿// Copyright (c) Microsoft Corporation.  All rights reserved.
 // Licensed under the MIT License.  See License.txt in the project root for license information.
 
-using CN.STOCK.DynamicOData.Extensions;
+using DynamicOData.Core.Extensions;
 using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
-namespace CN.STOCK.DynamicOData
+namespace DynamicOData.Core
 {
     public class CustomODataPathRouteConstraint : ODataPathRouteConstraint
     {

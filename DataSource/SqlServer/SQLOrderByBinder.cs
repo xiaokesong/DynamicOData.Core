@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CN.STOCK.DynamicOData.DataSource.SqlServer
+namespace DynamicOData.Core.DataSource.SqlServer
 {
     class SQLOrderByBinder
     {

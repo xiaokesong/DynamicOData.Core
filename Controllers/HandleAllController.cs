@@ -1,15 +1,15 @@
 ﻿// Copyright (c) Microsoft Corporation.  All rights reserved.
 // Licensed under the MIT License.  See License.txt in the project root for license information.
 
-using CN.STOCK.DynamicOData.DataSource;
-using CN.STOCK.DynamicOData.Extensions;
+using DynamicOData.Core.DataSource;
+using DynamicOData.Core.Extensions;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Query;
 using Microsoft.OData.Edm;
 using ODataPath = Microsoft.AspNet.OData.Routing.ODataPath;
 
-namespace CN.STOCK.DynamicOData.Controllers
+namespace DynamicOData.Core.Controllers
 {
     public class HandleAllController : ODataController
     {

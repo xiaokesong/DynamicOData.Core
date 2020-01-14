@@ -4,7 +4,7 @@
 using Microsoft.AspNet.OData.Routing;
 using Microsoft.AspNetCore.Routing;
 
-namespace CN.STOCK.DynamicOData.Extensions
+namespace DynamicOData.Core.Extensions
 {
     public class CustomODataRoute : ODataRoute
     {

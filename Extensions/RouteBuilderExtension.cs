@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 using System.Linq;
-using CN.STOCK.DynamicOData.DataSource;
+using DynamicOData.Core.DataSource;
 using Microsoft.AspNet.OData;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.AspNet.OData.Routing;
@@ -14,7 +14,7 @@ using Microsoft.OData;
 using Microsoft.OData.Edm;
 using ServiceLifetime = Microsoft.OData.ServiceLifetime;
 
-namespace CN.STOCK.DynamicOData.Extensions
+namespace DynamicOData.Core.Extensions
 {
     public static class RouteBuilderExtension
     {

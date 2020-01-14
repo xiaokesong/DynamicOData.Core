@@ -1,9 +1,9 @@
-﻿using CN.STOCK.DynamicOData.DataSource;
+﻿using DynamicOData.Core.DataSource;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CN.STOCK.DynamicOData
+namespace DynamicOData.Core
 {
     public static class DynamicOData
     {

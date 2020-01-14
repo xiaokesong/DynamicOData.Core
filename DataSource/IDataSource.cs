@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CN.STOCK.DynamicOData.DataSource
+namespace DynamicOData.Core.DataSource
 {
     public interface IDataSource
     {

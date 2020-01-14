@@ -3,11 +3,11 @@
 
 using System;
 using System.Collections.Generic;
-using CN.STOCK.DynamicOData.DataSource.SqlServer;
+using DynamicOData.Core.DataSource.SqlServer;
 using Microsoft.AspNet.OData;
 using Microsoft.OData.Edm;
 
-namespace CN.STOCK.DynamicOData.DataSource
+namespace DynamicOData.Core.DataSource
 {
     internal class DataSourceProvider
     {

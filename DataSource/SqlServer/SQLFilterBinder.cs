@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace CN.STOCK.DynamicOData.DataSource.SqlServer
+namespace DynamicOData.Core.DataSource.SqlServer
 {
     /// <summary>
     /// reference:
