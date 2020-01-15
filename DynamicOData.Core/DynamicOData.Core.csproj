@@ -6,7 +6,7 @@
     <Description>用于支持表和视图的动态OData</Description>
     <PackageProjectUrl>https://github.com/xiaokesong/DynamicOData.Core</PackageProjectUrl>
     <RepositoryUrl>https://github.com/xiaokesong/DynamicOData.Core</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
+    <RepositoryType>github</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
