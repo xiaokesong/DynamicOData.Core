@@ -14,31 +14,31 @@
     1、创建示例数据库，参照 Demo.sql
 
     2、创建.NET Core 的 WEBAPI 项目，并安装 DynamicOData.Core：
-    	dotnet add package DynamicOData.Core --version 1.0.0
+    	dotnet add package DynamicOData.Core
 
-    3、在 WebApi 项目 Startup.cs 文件 Configure 方法中修改 services.AddMvc 如下：
+    3、在 WebApi 项目 Startup.cs 文件 ConfigureServices 方法中修改 services.AddMvc 如下：
     	services.AddMvc(options =>
     	{
-    	options.EnableEndpointRouting = false;
+    		options.EnableEndpointRouting = false;
     	}).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
     4、在WebApi项目Startup.cs文件ConfigureServices方法中添加如下：
     	services.AddOData();
     	services.AddODataQueryFilter();
 
-    5、在WebApi项目Startup.cs文件Configure方法中修改app.UseMvc如下：
+    5、在WebApi项目Startup.cs文件Configure方法中修改app.UseMvc如下（将connectStr替换为你对应的数据库连接字符串）：
     	app.UseMvc(routeBuilder =>
     	{
     		routeBuilder.CustomMapODataServiceRoute("odata", "odata/{dataSource}");
     		string connectStr = "Server=.;Initial Catalog=DynamicOData.Core.Demo;Persist Security Info=False;User ID=sa;Password=Password;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Connection Timeout=30;";
     		var sqlSource = new SQLDataSource(Constants.SqlServerDataSource, connectStr);
-    		DynamicOData.AddDataSource(sqlSource);
+    		DynamicOData.Core.DynamicOData.AddDataSource(sqlSource);
     	});
 
-使用示例：
+使用示例（将https://localhost:44378替换为你对应的URL地址）：
 
     1、OData-比较-等于-eq
-        https://localhost:44378/odata/db/SysUser?UserName eq "zhangsan"
+        https://localhost:44378/odata/db/SysUser?$filter=UserName eq 'zhangsan'
 
     2、OData-比较-不等于-ne
     	https://localhost:44378/odata/db/SysUser?$filter=UserName ne 'zhangsan'
