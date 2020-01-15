@@ -3,13 +3,15 @@
 用于支持表和视图的动态 OData
 
 使用前提：
-1、基于.NET Core
-2、目前支持 SqlServer2016 及以上
-3、必须创建 SysGetEdmModelInfo 存储过程
-4、支持 Odata 表和视图的查询
+
+    1、基于.NET Core
+    2、目前支持 SqlServer2016 及以上
+    3、必须创建 SysGetEdmModelInfo 存储过程
+    4、支持 Odata 表和视图的查询
 
 搭建示例：
-1、创建示例数据库，参照 Demo.sql
+
+    1、创建示例数据库，参照 Demo.sql
 
     2、创建.NET Core 的 WEBAPI 项目，并安装 DynamicOData.Core：
     	dotnet add package DynamicOData.Core --version 1.0.0
@@ -34,8 +36,9 @@
     	});
 
 使用示例：
-1、OData-比较-等于-eq
-https://localhost:44378/odata/db/SysUser?UserName eq "zhangsan"
+
+    1、OData-比较-等于-eq
+        https://localhost:44378/odata/db/SysUser?UserName eq "zhangsan"
 
     2、OData-比较-不等于-ne
     	https://localhost:44378/odata/db/SysUser?$filter=UserName ne 'zhangsan'
