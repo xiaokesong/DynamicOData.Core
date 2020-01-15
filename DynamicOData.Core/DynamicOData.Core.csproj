@@ -8,6 +8,8 @@
     <RepositoryUrl>https://github.com/xiaokesong/DynamicOData.Core</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <Version>1.0.2</Version>
+    <Authors>xiaokesong</Authors>
+    <Company />
   </PropertyGroup>
 
   <ItemGroup>
