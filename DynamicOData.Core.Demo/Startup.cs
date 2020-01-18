@@ -35,6 +35,17 @@ namespace DynamicOData.Core.Demo
 
             services.AddOData();
             services.AddODataQueryFilter();
+
+            //跨域
+            string[] urls = { "*" };
+            services.AddCors(option =>
+            {
+                option.AddPolicy("cors", policy =>
+                {
+                    policy.WithOrigins(urls);
+                    policy.AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +60,9 @@ namespace DynamicOData.Core.Demo
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            //跨域
+            app.UseCors("cors");
 
             app.UseHttpsRedirection();
             app.UseMvc(routeBuilder =>
